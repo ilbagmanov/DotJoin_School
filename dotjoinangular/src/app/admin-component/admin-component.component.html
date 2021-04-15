@@ -1,0 +1,23 @@
+<h1>Admin panel</h1>
+<style>
+  TD, TH {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid black;
+  }
+</style>
+<table>
+  <thead>
+  <tr>
+    <th>Email</th>
+    <th>Is banned</th>
+    <th>Супер кнопка</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of users">
+    <td>{{item.email}}</td>
+    <td>{{item.banned}}</td>
+    <td><button (click)="giveBan(item.id)">Забанить/разбанить</button></td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,18 @@
+<div>
+  Email<input [(ngModel)]="email" type="email">
+  <button (click)="addUser()">Save</button>
+  <button (click)="search()">Print</button>
+</div>
+
+<table>
+  <thead>
+  <tr>
+    <th>Имя</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of users">
+    <td>{{item.email}}</td>
+  </tr>
+  </tbody>
+</table>
