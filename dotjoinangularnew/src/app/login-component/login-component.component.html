@@ -1,0 +1,9 @@
+<img id="loginHacker" src="assets/img/LoginHacker.jpg" alt="">
+<div>
+  <h1 id="loginText">LOGIN</h1>
+  <input id="emailField" [(ngModel)]="email" type="email" placeholder="Email">
+  <p></p>
+  <input id="passwordField" [(ngModel)]="password" type="password" placeholder="Password">
+  <p>{{message}}</p>
+  <button id="signInBtn" (click)="signIn()">LET'S GO</button>
+</div>

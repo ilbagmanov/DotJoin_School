@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Roboto-Thin; /* Гарнитура шрифта */
+  src: url(src/assets/fonts/Roboto-Thin.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Roboto-Regular; /* Гарнитура шрифта */
+  src: url(src/assets/fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Roboto-Bold; /* Гарнитура шрифта */
+  src: url(src/assets/fonts/Roboto-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+body {
+  background-color: black;
+}

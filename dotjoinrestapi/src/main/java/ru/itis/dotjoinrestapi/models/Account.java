@@ -18,19 +18,12 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(insertable = false)
     private String name;
-    @Column(insertable = false)
     private String surname;
-
     @Column(unique = true)
     private String email;
-
     private String password;
-    @Column(insertable = false)
     private String address;
-
-    @Column(unique = true, insertable = false)
     private String tel;
 
     @Column(insertable = false, nullable = false, columnDefinition = "bool default false")
@@ -38,4 +31,8 @@ public class Account {
 
     @ManyToMany(fetch = FetchType.EAGER)
     private List<AccountRole> roles;
+
+    @ManyToMany(mappedBy = "accounts")
+    private List<Course> courses;
+
 }

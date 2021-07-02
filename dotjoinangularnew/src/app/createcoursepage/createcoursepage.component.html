@@ -1,0 +1,16 @@
+<style>
+  p, h1 {
+    color: white;
+  }
+</style>
+
+<h1 style="font-family: Roboto-Thin, sans-serif !important;">Create page for course</h1>
+<div>
+  <input id="inpTitle" [(ngModel)]="title" name="title" type="text" placeholder="Title">
+  <br>
+  <textarea id="inpDesc" name="description" [(ngModel)]="text" placeholder="Description"></textarea>
+  <br>
+  <button id="btnCreate" (click)="create()">Add</button>
+</div>
+
+<img id="imgHacker" src="assets/img/LoginHacker.jpg">

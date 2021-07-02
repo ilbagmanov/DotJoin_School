@@ -50,7 +50,7 @@ public class JwtTokenProvider {
         claims.put("role", role);
 
         Date now = new Date();
-        var expire = now.getTime() + 8 * 60 * 60 * 100;
+        var expire = now.getTime() + 24 * 60 * 60 * 1000;
 
         return Jwts.builder()
                 .setClaims(claims)

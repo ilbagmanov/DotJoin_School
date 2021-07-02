@@ -1,0 +1,60 @@
+.mynavbar {
+  background-color: #00000000 !important;
+  height: 125px !important;
+}
+
+#text1 {
+  position: absolute;
+  width: 898px;
+  height: 55px;
+  left: 228px;
+  top: 293px;
+
+  font-family: Roboto-Thin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#text2 {
+  position: absolute;
+  width: 898px;
+  height: 55px;
+  left: 228px;
+  top: 331px;
+
+  font-family: Roboto-Thin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#startBtn {
+  position: absolute;
+  width: 296px;
+  height: 38px;
+  left: 535px;
+  top: 406px;
+
+  background: #C4C4C4;
+  border-radius: 19px;
+
+  font-family: Roboto-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#logoutImg {
+  width: 40px;
+  position: absolute;
+  right: 10px;
+}

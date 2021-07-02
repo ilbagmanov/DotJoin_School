@@ -1,0 +1,25 @@
+<p>course works!</p>
+<h1 style="color: #9EFF00">{{title}}</h1>
+<p style="color: #FF6B00;">{{description}}</p>
+
+<hr>
+<div class="btn-group-my">
+  <a href="course/{{id}}?page={{item}}" *ngFor="let item of pages">
+    <button class="pageDiv" type="button">{{item}}</button>
+  </a>
+</div>
+<hr>
+<h1 style="color: #9EFF00">{{pageTitle}}</h1>
+<p style="color: #FF6B00">{{pageText}}</p>
+<hr>
+<h2 style="color: white;">Comments</h2>
+<div class="btn-group-my">
+  <div *ngFor="let comment of comments" style="border: white 2px double">
+    <p style="color: #FFFFFF">Email: {{comment.email}}</p>
+    <p style="color: #FFFFFF">Text: {{comment.text}}</p>
+  </div>
+</div>
+<div *ngIf="pageNum >= 0">
+  <input id="commentField" [(ngModel)]="newComment" type="text" placeholder="Comment">
+  <button id="commentBtn" (click)="sendComment()">LET'S GO</button>
+</div>

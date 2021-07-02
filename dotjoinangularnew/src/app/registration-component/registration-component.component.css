@@ -1,0 +1,52 @@
+#reg_text {
+  width: 441px;
+  height: 52px;
+  font-family: Roboto-Thin, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #FFFFFF;
+}
+
+#block_main {
+  position: absolute;
+  right: 200px;
+  top: 150px;
+  text-align: center;
+}
+
+#block1, #block2, #block3, #block4 {
+  width: 388px;
+  height: 55px;
+  background: #FFFFFF;
+  border-radius: 39px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Roboto-Thin, sans-serif;
+}
+
+
+#RegHacker {
+  position: absolute !important;
+  /*width: 602px;*/
+  height: 647px;
+  left: -150px;
+  top: 97px;
+}
+
+#regBtn {
+  background: #FFFFFF;
+  border-radius: 17px;
+  width: 185px;
+  height: 52px;
+  font-size: 20px;
+  font-family: Roboto-Bold, sans-serif;
+  color: black;
+  border-color: black;
+}
+
+
+

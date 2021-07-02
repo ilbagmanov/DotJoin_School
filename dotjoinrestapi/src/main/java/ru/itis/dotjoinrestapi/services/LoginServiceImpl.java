@@ -8,11 +8,14 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import ru.itis.dotjoinrestapi.auth.AccountUserDetails;
+import ru.itis.dotjoinrestapi.dto.AccountDto;
 import ru.itis.dotjoinrestapi.models.Account;
 import ru.itis.dotjoinrestapi.models.AccountRole;
 import ru.itis.dotjoinrestapi.repositories.AccountRepository;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Optional;
 
 @Service
@@ -35,8 +38,16 @@ public class LoginServiceImpl implements UserDetailsService, LoginService {
         return new AccountUserDetails(account);
     }
 
-    public Account save(Account account){
-        account.setPassword(passwordEncoder.encode(account.getPassword()));
+    public Account save(AccountDto inp){
+        Account account = Account.builder()
+                .name(inp.getName())
+                .surname(inp.getSurname())
+                .email(inp.getEmail())
+                .password(passwordEncoder.encode(inp.getPassword()))
+                .courses(new ArrayList<>())
+                .address("")
+                .tel("")
+                .build();
         account.setRoles(Collections.singletonList(new AccountRole(1L,"ROLE_USER")));
         return accountRepository.save(account);
     }

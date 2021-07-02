@@ -1,0 +1,17 @@
+<img id="RegHacker" src="assets/img/RegisterHacker.jpg" alt="">
+
+<form>
+  <div id="block_main">
+    <h1 id="reg_text">REGISTRATION</h1>
+    <input id="block1" [(ngModel)]="email" name="email" type="email" placeholder="Write email">
+    <br>
+    <input id="block2" [(ngModel)]="password" name="password" type="password" placeholder="Write password">
+    <br>
+    <input id="block3" [(ngModel)]="name" name="name" type="text" placeholder="Write name">
+    <br>
+    <input id="block4" [(ngModel)]="surname" name="surname" type="text" placeholder="Write surname">
+    <br>
+    <p style="color: red">{{message}}</p>
+      <button id="regBtn" class="btn btn-primary"  (click)="registration()">LET'S GO</button>
+  </div>
+</form>

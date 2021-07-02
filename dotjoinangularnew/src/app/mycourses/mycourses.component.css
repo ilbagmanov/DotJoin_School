@@ -1,0 +1,30 @@
+.card-group {
+  margin-left: 45px;
+}
+
+.card {
+  border: white 2px solid;
+  float: left;
+  margin: 0 10px 10px 5px;
+  background-color: #003040;
+  height: 410px;
+}
+h3 {
+  padding-left: 10px;
+}
+
+p {
+  padding-left: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+#TitleH {
+  color: white !important;
+  border: white 2px dashed;
+  text-align: center;
+  margin-left: 320px;
+  margin-right: 320px;
+}

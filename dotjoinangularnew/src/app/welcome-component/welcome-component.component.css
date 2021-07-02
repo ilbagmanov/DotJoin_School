@@ -1,0 +1,105 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');*/
+
+.mynavbar {
+  background-color: #00000000 !important;
+  height: 125px !important;
+}
+
+#main_image {
+  position: fixed !important;
+  top: 0px;
+  right:-270px;
+  width: 1134px;
+  height: 771px;
+  clip-path: polygon(0 0, 79% 0, 100% 100%, 20% 100%);
+}
+
+
+#main_text {
+  /* ONLINE-SCHOOL */
+
+
+  position: absolute;
+  width: 498px;
+  height: 94px;
+  left: 14px;
+  top: 214px;
+
+  font-family: Roboto-Thin, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#code_code_code1, #code_code_code2, #code_code_code3 {
+  /* CODE... CODE... CODE.... */
+  position: absolute;
+  width: 548px;
+  height: 247px;
+  left: -88px;
+  top: 283px;
+
+
+  font-family: Roboto-Regular, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#code_code_code1{
+  margin-left: 80px;
+  color: #FF6B00;
+}
+
+#code_code_code2{
+  margin-left: 75px;
+  color: rgba(255, 107, 0, 0.23);
+}
+#code_code_code3{
+  margin-left: 70px;
+  color: rgba(255, 107, 0, 0.15);
+}
+
+#btn1, #btn2 {
+  font-family: Roboto-Bold, sans-serif;
+  color: black;
+  font-size: 24px;
+  border-color: black !important;
+
+
+  top: 600px;
+  margin-bottom: 40px;
+}
+
+#btn1{
+  position: absolute;
+  width: 280px;
+  height: 51px;
+  left: 24px;
+
+  background: #9EFF00;
+  border-radius: 9px;
+}
+
+#btn2 {
+  position: absolute;
+  width: 280px;
+  height: 51px;
+  left: 330px;
+
+  background: #9EFF00;
+  border-radius: 9px;
+}
+
+
+

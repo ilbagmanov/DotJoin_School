@@ -1,0 +1,20 @@
+<h1 id="TitleH">Bought courses!</h1>
+
+
+<div class="card-group">
+  <div *ngFor="let item of courses">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top"
+           src="https://www.zastavki.com/pictures/286x180/2012/Computers_Linux_Bang_bang_004130_32.jpg"
+           alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title" style="color: #9EFF00;">Title: {{item.title}}</h3>
+        <p class="card-text" style="color: #FF6B00">Info: {{item.description}}</p>
+        <p style="color: aqua;">Price: {{item.price}} $</p>
+        <a href="/course/{{item.id}}"><button id="{{item.id}}" type="button">START LEARN!</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+

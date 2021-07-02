@@ -1,10 +1,16 @@
 package ru.itis.dotjoinrestapi.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 public class CoursePart {
     @Id
@@ -13,6 +19,6 @@ public class CoursePart {
 
     private Long courseId;
     private String title;
-    private Integer part;
+    @Column(length = 2000)
     private String text;
 }

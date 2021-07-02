@@ -1,0 +1,16 @@
+<div id="urlsss">
+  <a *ngIf="flag"  href="/"><button class="urlBtn">Welcome</button></a>
+  <a *ngIf="flag"  href="/login"><button class="urlBtn">Login</button></a>
+  <a *ngIf="flag" href="/registration"><button class="urlBtn">Reg</button></a>
+  <a *ngIf="!flag" href="/home"><button class="urlBtn">Home</button></a>
+  <a *ngIf="!flag" href="/create_course"><button class="urlBtn">Create</button></a>
+  <a *ngIf="!flag" href="/mycourses"><button class="urlBtn">My courses</button></a>
+  <a *ngIf="!flag" href="/courses"><button class="urlBtn">course shop</button></a>
+  <a *ngIf="!flag" href="/createdcourses"><button class="urlBtn">created</button></a>
+  <a *ngIf="!flag"><button (click)="logout()" class="urlBtn">Logout</button></a>
+
+  <a href="/fwdfqwf/wq/df/qwd/f/w"><button class="urlBtn">Error</button></a>
+</div>
+<br>
+<router-outlet></router-outlet>
+

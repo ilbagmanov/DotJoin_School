@@ -32,4 +32,14 @@ public class AccountServiceImpl implements AccountService {
             account.setBanned(true);
         return accountRepository.save(account);
     }
+
+    @Override
+    public Account getAccountByEmail(String email) {
+        return accountRepository.getByEmail(email).orElse(null);
+    }
+
+    @Override
+    public Account save(Account account) {
+        return accountRepository.save(account);
+    }
 }

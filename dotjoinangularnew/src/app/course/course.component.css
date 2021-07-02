@@ -1,0 +1,14 @@
+.btn-group-my {
+  border-right: none; /* Prevent double borders */
+}
+
+.pageDiv {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+
+  font-size: 15px;
+  font-family: Roboto-Bold, sans-serif;
+}

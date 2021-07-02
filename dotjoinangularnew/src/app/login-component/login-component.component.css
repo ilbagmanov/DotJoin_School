@@ -1,0 +1,76 @@
+#loginText {
+  position: absolute;
+  width: 441px;
+  height: 52px;
+  left: 218px;
+  top: 178px;
+
+  font-family: Roboto-Thin;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+
+#emailField {
+  /* Rectangle 12 */
+
+
+  position: absolute;
+  width: 388px;
+  height: 55px;
+  left: 244px;
+  top: 280px;
+
+  background: #FFFFFF;
+  border-radius: 39px;
+
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Roboto-Thin, sans-serif;
+}
+
+#passwordField {
+  position: absolute;
+  width: 388px;
+  height: 56px;
+  left: 244px;
+  top: 348px;
+
+  background: #FFFFFF;
+  border-radius: 39px;
+
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Roboto-Thin, sans-serif;
+}
+
+#signInBtn {
+  position: absolute;
+  width: 185px;
+  height: 52px;
+  left: 244px;
+  top: 427px;
+
+  background: #FFFFFF;
+  border-radius: 17px;
+
+  font-family: Roboto-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+#loginHacker {
+  position: absolute;
+  width: 906px;
+  left: 723px;
+  bottom: 1px;
+}

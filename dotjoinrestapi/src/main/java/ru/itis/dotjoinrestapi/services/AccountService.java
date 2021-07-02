@@ -9,4 +9,6 @@ public interface AccountService {
     List<Account> getAllUsers();
     Optional<Account> getAccountById(Long id);
     Account giveBanToAccount(Account account);
+    Account getAccountByEmail(String email);
+    Account save(Account account);
 }

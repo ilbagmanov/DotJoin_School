@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import ru.itis.dotjoinrestapi.auth.JwtTokenProvider;
+import ru.itis.dotjoinrestapi.dto.AccountDto;
 import ru.itis.dotjoinrestapi.models.Account;
 import ru.itis.dotjoinrestapi.services.LoginServiceImpl;
 
@@ -49,9 +50,8 @@ public class LoginController {
     }
 
     @PostMapping("/registration")
-    public ResponseEntity<Account> register(@RequestBody Account account) {
-        System.out.println(account);
-        loginServiceImpl.save(account);
-        return ResponseEntity.ok(account);
+    public ResponseEntity<Account> register(@RequestBody AccountDto accountDto) {
+        Account ac = loginServiceImpl.save(accountDto);
+        return ResponseEntity.ok(ac);
     }
 }

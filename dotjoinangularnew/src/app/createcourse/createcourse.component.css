@@ -1,0 +1,58 @@
+#inpTitle{
+  width: 600px;
+
+  background: #FFFFFF;
+  border-radius: 39px;
+
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Roboto-Thin, sans-serif;
+  margin-bottom: 20px;
+}
+
+#inpDesc{
+  width: 600px;
+  height: 350px;
+  max-height: 400px;
+  max-width: 600px;
+
+  background: #FFFFFF;
+  border-radius: 39px;
+
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Roboto-Thin, sans-serif;
+
+  margin-bottom: 20px;
+}
+
+#inpPrice {
+  width: 600px;
+
+  background: #FFFFFF;
+  border-radius: 39px;
+
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Roboto-Thin, sans-serif;
+}
+
+#btnCreate {
+  margin-top: 20px;
+
+  width: 200px;
+  border-radius: 39px;
+  background-color: #989898;
+
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Roboto-Bold, sans-serif;
+  text-align: center;
+}
+
+#imgHacker {
+  position: absolute;
+  width: 946px;
+  left: 723px;
+  bottom: 1px;
+}
